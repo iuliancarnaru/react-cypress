@@ -15,10 +15,14 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           start: npm start
-          config-file: cypress.json
+          config-file: cypress-actions.json
           wait-on: "http://localhost:3000"
           wait-on-timeout: 300
           browser: chrome
           headless: true
+          record: true
+          parallel: true
         env:
           REACT_APP_MOVIE_API: ${{ secrets.REACT_APP_MOVIE_API }}
+          CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
