@@ -1,0 +1,47 @@
+{
+  "name": "react2020",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/cypress": "^7.0.6",
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.0.4",
+    "@testing-library/user-event": "^12.1.4",
+    "cypress": "^7.5.0",
+    "cypress-dark": "^1.7.14",
+    "dotenv": "^8.2.0",
+    "eslint-plugin-cypress": "^2.11.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0-next.98",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "tet:jest": "react-scripts test",
+    "test:cy": "cypress open",
+    "test:cy:headless": "cypress run --headless",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
