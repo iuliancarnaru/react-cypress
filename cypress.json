@@ -1,5 +1,8 @@
 {
   "experimentalStudio": true,
   "video": false,
-  "projectId": "pk4iyi"
+  "projectId": "pk4iyi",
+  "env": {
+    "REACT_APP_MOVIE_API": "key"
+  }
 }
